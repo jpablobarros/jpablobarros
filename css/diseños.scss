@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+$verde: green;
+$negro: black;
+$naranja: orange;
+$gradiente1:linear-gradient(skyblue , rgb(250, 178, 44));
+$gradiente2:linear-gradient(rgb(250, 178, 44) , skyblue);
+$fuente1: 'Josefin Sans', sans-serif;
+
+
+
+/*Importando Secciones*/
+
+@import "Footer/_footer";
+@import "header/_header";
+@import "SeccionesPrincipales/_index";
+@import "SeccionesPrincipales/_quienesomos\(html\)";
+@import "SeccionesPrincipales/_servicios";
+@import "SeccionesPrincipales/_faq";
+@import "SeccionesPrincipales/clientes";
+@import "Productos/macetas";
+@import "Productos/plantas";
+@import "Productos/sustrato";
+
+
+
+#popupIframe, #chatIframe{
+    margin-bottom: -1rem;
+}

@@ -1,0 +1,46 @@
+.imgIndex{
+    margin-top: 12rem;
+        h1{
+            text-align: center;
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 700;
+        }
+        img{
+            border-radius: 2rem;
+        }
+}
+.titProductos{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5rem;
+}
+.productos{
+    margin-top: 50px;
+    margin-bottom: 10rem;
+    display: flex;
+    .btnProducto{
+        color: black;
+        background: -webkit-linear-gradient(-43deg, rgb(22, 237, 123), rgb(125, 115, 245));
+        background: linear-gradient(-43deg, rgb(22, 237, 123), rgb(125, 115, 245));
+        border: 1px solid black;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        border-radius: 10%;
+            &:hover{
+                text-decoration: none;
+            }
+    }
+    .productos a{
+        text-decoration: none;
+        color: black;
+    }
+    .tituloProductos{
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 700;
+        height:50rem;
+        margin-top: 5rem;
+    }
+}

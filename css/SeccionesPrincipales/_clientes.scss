@@ -1,0 +1,71 @@
+.formLogin{
+    margin-top: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+        h1{
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 700;
+            margin-top: 13rem;
+        }
+        .lblLogin{
+            font-size: 1.5rem;
+        }
+        .ctrlLogin{
+            font-weight: 700;
+            width: 40%;
+            margin: auto;
+        }
+        .smlTxt{
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .form-check-input{
+            margin-top: 0.7rem;
+        }
+        .btn{
+            background: linear-gradient(-43deg, rgb(22, 237, 123), rgb(125, 115, 245));
+            background: -webkit-linear-gradient(-43deg, rgb(22, 237, 123), rgb(125, 115, 245));
+            border-radius: 10px;
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 700;
+        }
+}
+.formNewLogin{
+    margin-top: 10rem;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+        h2{
+            font-weight: 700;
+        }
+        .lblNewUser{
+            margin-top: 1.5rem;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+        }
+        .ctrlNewUser{
+            font-weight: 700;
+            width: 65%;
+            margin: auto;
+        }
+        .form-check-input{
+            margin-top: 0.7rem;
+            margin-left: -3rem;
+        }
+        .btn{
+            background: linear-gradient(-43deg, rgb(22, 237, 123), rgb(125, 115, 245));
+            background: -webkit-linear-gradient(-43deg, rgb(22, 237, 123), rgb(125, 115, 245));
+            border-radius: 10px;
+            font-family: 'Josefin Slab' , serif;
+            font-size: 1.5rem;
+            display: flex;
+            margin: auto;
+            margin-bottom: 5rem;
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 700;
+        }
+}

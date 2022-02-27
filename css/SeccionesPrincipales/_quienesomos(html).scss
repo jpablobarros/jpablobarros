@@ -1,0 +1,32 @@
+/* Texto */
+.main{
+    background: -webkit-linear-gradient(-43deg, rgb(22, 237, 123), rgb(125, 115, 245));
+    background: linear-gradient(-43deg, rgb(22, 237, 123), rgb(125, 115, 245));
+    margin-top: 20%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    min-height: calc(100vh - 100px - 100px);
+    border-radius: 10%;
+        p{
+            margin-top: 3rem;
+        }
+}
+
+/*Carousel*/
+
+.miprimerCarousel{
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+        img{
+            border-radius: 10px;
+        }
+}
+
+/*Media para carousel */
+@media screen and (max-width: 600px){
+        .miprimerCarousel{
+        width: 400px;  
+    }
+}
