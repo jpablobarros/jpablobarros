@@ -1,7 +1,6 @@
 /*Barra navegacion*/
 header{
-    background-image: $gradiente1;
-    border-bottom: 1px solid $verde;
+    background: radial-gradient(circle at 50% 50%, #e0d610, #b6e040, #8ce768, #5eea8f, #16ebb4, #00ead4, #00e7ee, #0fe3ff);
     .header__topmenu{
         font-size: 25px;
         font-family: $fuente1;
@@ -15,6 +14,19 @@ header{
                         transform: scale(1.1);
                         transition: .2s;
                     }
+            }
+    }
+    .header__inicio{
+        @include fuentePrincipal;
+        font-size: 25px;
+        color: $negro;
+        position: absolute;
+        right: 10rem;
+            &:hover{
+                color: $verde;
+                text-decoration: none;
+                font-size: 28px;
+                transition: 0.4s;
             }
     }
     .topmenu__iconos{
@@ -40,8 +52,7 @@ header{
     }
     .header__nav{
         ul{
-            font-family: 'Josefin Sans', sans-serif;
-            font-weight: 700;
+            @include fuentePrincipal;
             font-size: 25px;
             list-style: none;
             display: flex;
@@ -73,6 +84,7 @@ header{
     .header__btnAbrirResponsive{
         visibility: hidden;
         button{
+            border: groove;
             background-color: transparent;
             border: none;
             position: absolute;
@@ -112,8 +124,7 @@ header{
     display: flex;
     justify-content: center;
         span{
-            font-family: 'Josefin Sans', sans-serif;
-            font-weight: 700;
+            @include fuentePrincipal;
             font-size: 25px;
             text-align: center;
             position: absolute;
@@ -128,13 +139,13 @@ header{
 /*Formulario de busqueda*/
 
 .busquedaEnHeader{
-    display: flex;
-    justify-content: end;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     visibility: hidden;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
     .formularioBusquedaHeader{
             opacity: 0;
             transition: .5s ease all;
@@ -148,17 +159,23 @@ header{
                             display: flex;
                             border-radius: 20px;
                             height: 2rem;
-                            font-family: 'Josefin Sans', sans-serif;
-                            font-weight: 700;
+                            width: 40%;
+                            @include fuentePrincipal;
                             font-size: 30px;
                         }
+                        @media only screen and (max-width:800px){
+                            input{
+                                width: 80%;
+                            }
+                        }
                         button{
+                            border: groove;
                             width: 3rem;
                             height: 3rem;
-                            background-color: lightgreen;
+                            background-image: $gradiente2;
                             border-radius: 50%;
-                            margin-top: -0.5rem;
-                            margin-left: 0.5rem;
+                            position: absolute;
+                            margin-top: 2rem;
                         }
                 }
         }
@@ -166,10 +183,10 @@ header{
             display: flex;
             justify-content: center;
             font-size: 40px;
-            margin-top: 2rem;
+            margin-top: 4rem;
             color: black;
                 &:hover{
-                    color: green;
+                    color: $verde;
                 }
         }
     .formularioBusquedaHeader.active{
@@ -185,43 +202,44 @@ header{
     height: 100vh;
     backdrop-filter: blur(5px);
     font-weight: 700;
+    z-index: 1000;
         .header__loginform{
             opacity: 0;
             transition: .5s ease all;
             display: flex;
             justify-content: center;
             text-align: center;
-            height: 30rem;
+            height: 20rem;
                 form{
+                    border: groove;
                     display: flex;
-                    flex-direction: column;
-                    margin-top: 2rem;
+                    flex-direction: column;                   
                     width: 25rem;
-                    background-image: $gradiente1;
-                    font-family: 'Josefin Sans', sans-serif;
+                    background: radial-gradient(circle at 50% 50%, #e0d610, #b6e040, #8ce768, #5eea8f, #16ebb4, #00ead4, #00e7ee, #0fe3ff);
+                    @include fuentePrincipal;
                     font-size: 30px;
                     border-radius: 10px;
                         input{
                             margin-left: 10%;
-                            font-family: 'Josefin Sans', sans-serif;
+                            @include fuentePrincipal;
                             border-radius: 20px;
                             width: 80%;
-                            font-weight: 700;
+                            margin-top: -0.5rem;
                         }
                     button{
+                        border: groove;
+                        margin-top: -2rem;
                         margin-left: 15%;
                         width: 70%;
-                        margin-top: 2rem;
-                        background-color: skyblue;
+                        background-image: $gradiente2;
                         border-radius: 10px;
                         font-weight: 700;
                             &:hover{
                                 transform: scale(1.1);
                             }
                     }
-                    i{
+                    i{  margin-top: -30px;
                         color: $negro;
-                        
                         font-size: 40px;
                     }
                 }
@@ -237,22 +255,22 @@ header{
     z-index: 100;
     top: 0;
     right: 0;
-    height: 35rem;
+    border: groove;
         .header__navPopup{
             opacity: 0;
             transition: .5s ease all;
-            background-color: rgb(250, 185, 65);
-            font-family: $fuente1;
-            font-weight: 700;
+            background: radial-gradient(circle at 50% 50%, #e0d610, #b6e040, #8ce768, #5eea8f, #16ebb4, #00ead4, #00e7ee, #0fe3ff);
+            @include fuentePrincipal;
             font-size: 25px;
             border-radius: 30px;
                 img{
-                    width: 11rem;
-                    height: 11rem;
+                    width: 10rem;
+                    height: 10rem;
                 }
                 ul{
-                    margin-top: -1.5rem;
-                    list-style: none;                
+                    margin-top: 0.5rem;
+                    list-style: none;
+                    margin-left: 2rem;
                     a{
                             color: $negro;
                                 &:hover{
@@ -278,6 +296,12 @@ header{
                             color: $verde;
                         }
                 }
+        }
+        .logo__navVar{
+            width: 5rem;
+            height: 5rem;
+            display: flex;
+            margin-left: 35%;
         }
         .popupnav__cerrar{
             display: flex;
@@ -314,7 +338,9 @@ header{
     .header__nav li{
         display: none;
     }
-    
+    .header__inicio{
+        display: none;
+    }
 }
 @media only screen and (max-width: 1440px){
     .header__btnAbrirResponsive button{

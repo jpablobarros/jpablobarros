@@ -4,11 +4,11 @@
 
 /*Secciones del footer*/
 footer{
-  background-image: linear-gradient(skyblue , rgb(250, 178, 44));
+    background: radial-gradient(circle at 50% 50%, #e0d610, #b6e040, #8ce768, #5eea8f, #16ebb4, #00ead4, #00e7ee, #0fe3ff);
 }
 .navFooter{
-  display: flex;
-  align-self: flex-end;
+    display: flex;
+    align-self: flex-end;
 }
 .secciones__footer{
     list-style: none;
@@ -17,81 +17,64 @@ footer{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
     font-size: 1.3rem;
-      a{
+        a{
         padding: 5px;
         color: black;
-          &:hover{
-            text-decoration: none;
-            color: black;
-            font-size: 25px;
-            transition: 0.5s;
-          }
-      }
+            &:hover{
+            text-decoration: none; 
+            color: green;   
+        }
+    }
 }
 
 /*Logo empresa*/
 
 .logoFooter{
-  img{
+    img{
     width: 13rem;
-  }
-  &:hover{
+    }
+    &:hover{
     opacity: 50%;
-  }
+    }
 }
 
 /*Footer redes sociales*/
 .redesFooter{
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  margin-right: -2rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: -2rem;
 }
 .redes_footer{
-  background-color: black;
-  padding: 8px;
-  border-radius: 100%;
-  font-size: 2rem;
-    &:hover{
-      transform: scale(1.5);
-      transition-duration: 0.5s;
+    color: $negro;
+    padding: 8px;
+    border-radius: 100%;
+    font-size: 2rem;
+        &:hover{
+        transform: scale(1.1);
+        transition-duration: 0.5s;
+        color: $verde;
     }
 }
-.red_youtube{
-  font-size: 1.8rem;
-  color: red;
-}
-.red_whatsapp{
-  color: green;
-  
-}
-.red_instagram{
-    color:  #7F029B;
-}
-.red_facebook{
-    color: #344FFB;
-    
-}
-
 
 
 @media only screen and (max-width:768px){
-  .redesFooter{
+    .redesFooter{
     justify-content: center;
-  }
-  .navFooter ul{
+    }
+    .navFooter ul{
     display: flex;
     flex-direction: row;  
     margin: auto; 
     a{
         margin: 20px;
-      }
-  }
+        }
+    }
 }
 @media only screen and (max-width:600px){
-  .foot__widescreen{
+    .foot__widescreen{
     display: none;
-  }
+    }
 }
 
 /*Menu responsivo modificiado para que las clases no afecten mis otros nav y elimine algunas animaciones que no me gustaban*/
@@ -99,11 +82,14 @@ footer{
 /*Tamaño y posicion de los circulos mas pequeños*/
 
 .foot__smallscreen{
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  height: 7rem;
-  backdrop-filter: blur(5px);
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    height: 7rem;
+    backdrop-filter: blur(5px);
+}
+.ir_arriba{
+    font-size: 25px;
 }
 .nav__footer {
     width: 50px;
@@ -111,10 +97,9 @@ footer{
     margin-left: -25px;
     margin-top: -25px;
 }
-
 /*Icono de menu hamburguesa*/
 
-  .toggle {
+.toggle {
     width: 80px;
     height: 80px;
     margin-left: -40px;
@@ -122,51 +107,50 @@ footer{
     z-index: 2;
 }
 /*Animacion de apertura y cierre de los circulos y color de fondo*/
-  .nav__footer,
-  .toggle,
-  .wobble {
+.nav__footer,
+.toggle,
+.wobble {
+    border: groove;
     position: absolute;
     bottom: 0px;
     left: 50%;
     text-align: center;
-    background: -webkit-linear-gradient(-23deg, rgb(71, 237, 22), rgb(66, 193, 246));
-    background: linear-gradient(-23deg, rgb(71, 237, 22), rgb(66, 193, 246));
+    background-image: $gradiente2;
     border-radius: 50%;
     cursor: pointer;
-    -webkit-transition: all .2s cubic-bezier(0,.42,.42,1);
-    -moz-transition: all .2s cubic-bezier(0,.42,.42,1);
-    -o-transition: all .2s cubic-bezier(0,.42,.42,1);
-    transition: all .2s cubic-bezier(0,.42,.42,1);
+    -webkit-transition: all .4s cubic-bezier(0,.42,.42,1);
+    -moz-transition: all .4s cubic-bezier(0,.42,.42,1);
+    -o-transition: all .4s cubic-bezier(0,.42,.42,1);
+    transition: all .4s cubic-bezier(0,.42,.42,1);
 }
 /*Alineacio vertical del icono en el circulo*/
 
 .nav__footer i {
     line-height: 50px;
-  }
+    }
 
   /* Aparicion de cada circulo */
-  
-  .nav__footer .slide-out:nth-child(1) {
+
+.nav__footer .slide-out:nth-child(1) {
     -webkit-transform: translate(90px, -20px) scale(1.2);
     transform: translate(70px, -20px) scale(1.2);
-  }
-  
-  .nav__footer .slide-out:nth-child(2) {
+}
+.nav__footer .slide-out:nth-child(2) {
     -webkit-transform: translate(160px, -40px);
     transform: translate(122px, -40px);
-  }
-  
-  .nav__footer .slide-out:nth-child(3) {
+}
+
+.nav__footer .slide-out:nth-child(3) {
     -webkit-transform: translate(-90px, -20px) scale(1.2);
     transform: translate(-70px, -20px) scale(1.2);
-  }
-  
-  .nav__footer .slide-out:nth-child(4) {
+}
+
+.nav__footer .slide-out:nth-child(4) {
     transform: translate(-122px, -40px);
-  }
-  
-  /* Se pierde el icono y la animacion del circulo mas grande*/
-  /*Le cambie el color a negro*/
+}
+
+/* Se pierde el icono y la animacion del circulo mas grande*/
+/*Le cambie el color a negro*/
 
 .hamburger {
     width: 25px;
@@ -215,56 +199,63 @@ footer{
 
 @media only screen and (min-width: 600px){
     .foot__smallscreen{
-      display: none;
+        display: none;
     }
 }
 
 /*Ventana emergente del menu responsive*/
 
 .ventanaEmergenteFooter{
-  display: flex;
-  backdrop-filter: blur(5px);
-  visibility: hidden;
-  position: fixed;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-      h3,h4 {
+    display: flex;
+    backdrop-filter: blur(5px);
+    visibility: hidden;
+    position: fixed;
+    text-align: center;
+    position: fixed;
+    top: -8rem;
+    bottom: 0;
+    border: groove;
+        h3,h4 {
         font-weight: 700;
     }
-  .redesEmergente{
+    .redesEmergente{
     width: 30px;
     margin-top: -40px;
-  }
-  .popup_footer{
+    }
+    .popup_footer{
+        background: radial-gradient(circle at 50% 50%, #e0d610, #b6e040, #8ce768, #5eea8f, #16ebb4, #00ead4, #00e7ee, #0fe3ff);
+    opacity: 0;
+    transition: .5s ease all;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
-    background-color: rgb(247, 194, 95);
+    border: groove;
+
     width: 20rem;
     border-radius: 10px;
     margin: auto;
     margin-top: 10rem;
-  }
-}
-.ventanaEmergenteFooter.active{
-  visibility: visible;
-}
-.cerrar-popup{
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-    img{
-      width: 50px;
+    }
+    .popup_footer.active{
+    opacity: 1;
     }
 }
+.ventanaEmergenteFooter.active{
+    visibility: visible;
+}
+.cerrar-popup{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+        img{
+            width: 50px;
+        }
+}
 .botonAbrirFooter{
-  background-color: transparent;
-  border: none;
-    img{
-      width: 25px;
-      margin-top: 10px;
+    background-color: transparent;
+    border: none;
+        img{
+        width: 25px;
+        margin-top: 10px;
     }
 }

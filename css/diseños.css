@@ -1,12 +1,357 @@
 @charset "UTF-8";
+/*Fuente*/
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
+/*Variables*/
+/*Mixins*/
 /*Importando Secciones*/
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
 /*Alugnas clases son parecidas con leves cambios*/
 /*Footer activo en resoluciones mayores a 600px despues cambia a responsive linea */
 /*Secciones del footer*/
 footer {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(#fab22c));
-  background-image: linear-gradient(skyblue, #fab22c);
+  background: radial-gradient(circle at 50% 50%, #e0d610, #b6e040, #8ce768, #5eea8f, #16ebb4, #00ead4, #00e7ee, #0fe3ff);
 }
 
 .navFooter {
@@ -33,10 +378,7 @@ footer {
 
 .secciones__footer a:hover {
   text-decoration: none;
-  color: black;
-  font-size: 25px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  color: green;
 }
 
 /*Logo empresa*/
@@ -63,34 +405,18 @@ footer {
 }
 
 .redes_footer {
-  background-color: black;
+  color: black;
   padding: 8px;
   border-radius: 100%;
   font-size: 2rem;
 }
 
 .redes_footer:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-}
-
-.red_youtube {
-  font-size: 1.8rem;
-  color: red;
-}
-
-.red_whatsapp {
   color: green;
-}
-
-.red_instagram {
-  color: #7F029B;
-}
-
-.red_facebook {
-  color: #344FFB;
 }
 
 @media only screen and (max-width: 768px) {
@@ -135,6 +461,10 @@ footer {
           backdrop-filter: blur(5px);
 }
 
+.ir_arriba {
+  font-size: 25px;
+}
+
 .nav__footer {
   width: 50px;
   height: 50px;
@@ -155,15 +485,17 @@ footer {
 .nav__footer,
 .toggle,
 .wobble {
+  border: groove;
   position: absolute;
   bottom: 0px;
   left: 50%;
   text-align: center;
-  background: linear-gradient(-23deg, #47ed16, #42c1f6);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fab22c), to(skyblue));
+  background-image: linear-gradient(#fab22c, skyblue);
   border-radius: 50%;
   cursor: pointer;
-  -webkit-transition: all 0.2s cubic-bezier(0, 0.42, 0.42, 1);
-  transition: all 0.2s cubic-bezier(0, 0.42, 0.42, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0, 0.42, 0.42, 1);
+  transition: all 0.4s cubic-bezier(0, 0.42, 0.42, 1);
 }
 
 /*Alineacio vertical del icono en el circulo*/
@@ -260,8 +592,9 @@ footer {
   position: fixed;
   text-align: center;
   position: fixed;
-  top: 0;
+  top: -8rem;
   bottom: 0;
+  border: groove;
 }
 
 .ventanaEmergenteFooter h3, .ventanaEmergenteFooter h4 {
@@ -274,14 +607,22 @@ footer {
 }
 
 .ventanaEmergenteFooter .popup_footer {
+  background: radial-gradient(circle at 50% 50%, #e0d610, #b6e040, #8ce768, #5eea8f, #16ebb4, #00ead4, #00e7ee, #0fe3ff);
+  opacity: 0;
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
-  background-color: #f7c25f;
+  border: groove;
   width: 20rem;
   border-radius: 10px;
   margin: auto;
   margin-top: 10rem;
+}
+
+.ventanaEmergenteFooter .popup_footer.active {
+  opacity: 1;
 }
 
 .ventanaEmergenteFooter.active {
@@ -295,7 +636,6 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -315,9 +655,7 @@ footer {
 
 /*Barra navegacion*/
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(#fab22c));
-  background-image: linear-gradient(skyblue, #fab22c);
-  border-bottom: 1px solid green;
+  background: radial-gradient(circle at 50% 50%, #e0d610, #b6e040, #8ce768, #5eea8f, #16ebb4, #00ead4, #00e7ee, #0fe3ff);
 }
 
 header .header__topmenu {
@@ -338,6 +676,24 @@ header .header__topmenu a:hover {
           transform: scale(1.1);
   -webkit-transition: .2s;
   transition: .2s;
+}
+
+header .header__inicio {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
+  font-size: 25px;
+  color: black;
+  position: absolute;
+  right: 10rem;
+}
+
+header .header__inicio:hover {
+  color: green;
+  text-decoration: none;
+  font-size: 28px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 header .topmenu__iconos {
@@ -370,8 +726,9 @@ header .logoHeader:hover {
 }
 
 header .header__nav ul {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
+  color: black;
   font-size: 25px;
   list-style: none;
   display: -webkit-box;
@@ -416,6 +773,7 @@ header .header__btnAbrirResponsive {
 }
 
 header .header__btnAbrirResponsive button {
+  border: groove;
   background-color: transparent;
   border: none;
   position: absolute;
@@ -465,8 +823,9 @@ header .header__btnAbrirResponsive button i {
 }
 
 .header__animacion span {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
+  color: black;
   font-size: 25px;
   text-align: center;
   position: absolute;
@@ -481,17 +840,14 @@ header .header__btnAbrirResponsive button i {
 
 /*Formulario de busqueda*/
 .busquedaEnHeader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   visibility: hidden;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: 1000;
 }
 
 .busquedaEnHeader .formularioBusquedaHeader {
@@ -519,18 +875,28 @@ header .header__btnAbrirResponsive button i {
   display: flex;
   border-radius: 20px;
   height: 2rem;
-  font-family: 'Josefin Sans', sans-serif;
+  width: 40%;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
+  color: black;
   font-size: 30px;
 }
 
+@media only screen and (max-width: 800px) {
+  .busquedaEnHeader .formularioBusquedaHeader form input {
+    width: 80%;
+  }
+}
+
 .busquedaEnHeader .formularioBusquedaHeader form button {
+  border: groove;
   width: 3rem;
   height: 3rem;
-  background-color: lightgreen;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fab22c), to(skyblue));
+  background-image: linear-gradient(#fab22c, skyblue);
   border-radius: 50%;
-  margin-top: -0.5rem;
-  margin-left: 0.5rem;
+  position: absolute;
+  margin-top: 2rem;
 }
 
 .busquedaEnHeader a {
@@ -541,7 +907,7 @@ header .header__btnAbrirResponsive button i {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 40px;
-  margin-top: 2rem;
+  margin-top: 4rem;
   color: black;
 }
 
@@ -563,6 +929,7 @@ header .header__btnAbrirResponsive button i {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   font-weight: 700;
+  z-index: 1000;
 }
 
 .header__userLogin .header__loginform {
@@ -576,10 +943,11 @@ header .header__btnAbrirResponsive button i {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  height: 30rem;
+  height: 20rem;
 }
 
 .header__userLogin .header__loginform form {
+  border: groove;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -587,28 +955,32 @@ header .header__btnAbrirResponsive button i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 2rem;
   width: 25rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(#fab22c));
-  background-image: linear-gradient(skyblue, #fab22c);
-  font-family: 'Josefin Sans', sans-serif;
+  background: radial-gradient(circle at 50% 50%, #e0d610, #b6e040, #8ce768, #5eea8f, #16ebb4, #00ead4, #00e7ee, #0fe3ff);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
   font-size: 30px;
   border-radius: 10px;
 }
 
 .header__userLogin .header__loginform form input {
   margin-left: 10%;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
   border-radius: 20px;
   width: 80%;
-  font-weight: 700;
+  margin-top: -0.5rem;
 }
 
 .header__userLogin .header__loginform form button {
+  border: groove;
+  margin-top: -2rem;
   margin-left: 15%;
   width: 70%;
-  margin-top: 2rem;
-  background-color: skyblue;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fab22c), to(skyblue));
+  background-image: linear-gradient(#fab22c, skyblue);
   border-radius: 10px;
   font-weight: 700;
 }
@@ -619,6 +991,7 @@ header .header__btnAbrirResponsive button i {
 }
 
 .header__userLogin .header__loginform form i {
+  margin-top: -30px;
   color: black;
   font-size: 40px;
 }
@@ -634,28 +1007,30 @@ header .header__btnAbrirResponsive button i {
   z-index: 100;
   top: 0;
   right: 0;
-  height: 35rem;
+  border: groove;
 }
 
 .header__navPopup .header__navPopup {
   opacity: 0;
   -webkit-transition: .5s ease all;
   transition: .5s ease all;
-  background-color: #fab941;
+  background: radial-gradient(circle at 50% 50%, #e0d610, #b6e040, #8ce768, #5eea8f, #16ebb4, #00ead4, #00e7ee, #0fe3ff);
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
+  color: black;
   font-size: 25px;
   border-radius: 30px;
 }
 
 .header__navPopup .header__navPopup img {
-  width: 11rem;
-  height: 11rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 .header__navPopup .header__navPopup ul {
-  margin-top: -1.5rem;
+  margin-top: 0.5rem;
   list-style: none;
+  margin-left: 2rem;
 }
 
 .header__navPopup .header__navPopup ul a {
@@ -697,6 +1072,15 @@ header .header__btnAbrirResponsive button i {
 
 .header__navPopup .header__navPopup .popupnav__redes a:hover {
   color: green;
+}
+
+.header__navPopup .header__navPopup .logo__navVar {
+  width: 5rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 35%;
 }
 
 .header__navPopup .header__navPopup .popupnav__cerrar {
@@ -741,6 +1125,9 @@ header .header__btnAbrirResponsive button i {
   .header__nav li {
     display: none;
   }
+  .header__inicio {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1440px) {
@@ -770,247 +1157,657 @@ header .header__btnAbrirResponsive button i {
   }
 }
 
-.imgIndex {
-  margin-top: 12rem;
+/*Gradiente para el body*/
+body {
+  background: radial-gradient(circle at 50% 50%, #e0d610, #b6e040, #8ce768, #5eea8f, #16ebb4, #00ead4, #00e7ee, #0fe3ff);
 }
 
-.imgIndex h1 {
-  text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-}
-
-.imgIndex img {
-  border-radius: 2rem;
-}
-
-.titProductos {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-  text-align: center;
+/*Index html*/
+.fondo__plantemosArboles {
   margin-top: 5rem;
+  background-image: url(../../multimedia/imagenes/arboles2.jpg);
+  background-size: 99.9%;
+  -webkit-animation: animation 600s linear infinite;
+          animation: animation 600s linear infinite;
+  border-radius: 40px;
 }
 
-.productos {
-  margin-top: 50px;
-  margin-bottom: 10rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.productos .btnProducto {
-  color: black;
-  background: linear-gradient(-43deg, #16ed7b, #7d73f5);
-  border: 1px solid black;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-  border-radius: 10%;
-}
-
-.productos .btnProducto:hover {
-  text-decoration: none;
-}
-
-.productos .productos a {
-  text-decoration: none;
-  color: black;
-}
-
-.productos .tituloProductos {
-  text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-  height: 50rem;
-  margin-top: 5rem;
-}
-
-/* Texto */
-.main {
-  background: linear-gradient(-43deg, #16ed7b, #7d73f5);
-  margin-top: 20%;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-  font-size: 1.6rem;
-  min-height: calc(100vh - 100px - 100px);
-  border-radius: 10%;
-}
-
-.main p {
-  margin-top: 3rem;
-}
-
-/*Carousel*/
-.miprimerCarousel {
-  width: 600px;
-  margin: 0 auto;
-  margin-bottom: 3rem;
-}
-
-.miprimerCarousel img {
-  border-radius: 10px;
-}
-
-/*Media para carousel */
-@media screen and (max-width: 600px) {
-  .miprimerCarousel {
-    width: 400px;
+@-webkit-keyframes animation {
+  100% {
+    background-position: 0px -3000px;
   }
 }
 
-.caruselServicios {
-  margin-top: 13rem;
+@keyframes animation {
+  100% {
+    background-position: 0px -3000px;
+  }
+}
+
+.fondo__plantemosArboles img {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.titulo_carrusel {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
+}
+
+.titulo_carrusel h1, .titulo_carrusel h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+}
+
+.carrusel_index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carrusel_index img {
+  border-radius: 70px;
+  width: 120%;
+  height: 40%;
+  -webkit-transition: 5s ease;
+  transition: 5s ease;
+}
+
+.carrusel_index img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.carrusel_index h5 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
+  font-size: 2rem;
+  color: orange;
+}
+
+.carrusel_index p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.formulario_cv {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.formulario_cv h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
+}
+
+.formulario_cv form {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fab22c), to(skyblue));
+  background-image: linear-gradient(#fab22c, skyblue);
+  height: 20rem;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+  border: groove;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
+  font-size: 20px;
+}
+
+.formulario_cv form input {
+  border-radius: 20px;
+  height: 2rem;
   width: 50%;
-  margin-bottom: 10rem;
+  margin-top: 2rem;
+  font-weight: 700;
 }
 
-.caruselServicios img {
+.formulario_cv form #btn-cargarArchivo {
+  display: none;
+}
+
+.formulario_cv form .btn-subirCV {
+  font-weight: 700;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fab22c), to(skyblue));
+  background-image: linear-gradient(#fab22c, skyblue);
+  border: groove;
+  padding: 10px;
+  margin-top: 1rem;
   border-radius: 10px;
 }
 
-/*Carousel, descripcion y contacto de jardineria (se repiten las clases y opciones podria crear un mixin */
-.jardineria {
-  margin-top: 5rem;
+.formulario_cv form .btn_subirCV {
+  border: groove;
+  height: 3rem;
+  margin-top: 3rem;
+  border-radius: 20px;
+  font-weight: 700;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(#fab22c));
+  background-image: linear-gradient(skyblue, #fab22c);
 }
 
-.jardineria h3 {
-  font-family: 'Josefin Sans', sans-serif;
+.index_productos {
+  margin-top: 3rem;
+}
+
+.index_productos h4 {
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.index_productos img {
+  width: 28rem;
+  border-radius: 20px;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  margin-bottom: 2rem;
+}
+
+.index_productos img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 20px 20px 10px grey;
+          box-shadow: 20px 20px 10px grey;
+}
+
+.index_productos span {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  font-size: 23px;
+}
+
+/*Fin Index*/
+/*Quienes somos*/
+.img-quienesSomos {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
+}
+
+.img-quienesSomos h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  font-size: 35px;
+}
+
+.img-quienesSomos img {
+  border-radius: 20px;
+  -webkit-transition: 2s linear;
+  transition: 2s linear;
+}
+
+.img-quienesSomos img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.parrafo_quienesSomos {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
+  margin-top: 3rem;
+  font-size: 1.7rem;
   text-align: center;
 }
 
-.jardineria .jumbotron {
-  margin: 0 auto;
-  background: linear-gradient(-43deg, #16ed7b, #7d73f5);
-  background: -webkit-linear-gradient(-43deg, #16ed7b, #7d73f5);
-  border-radius: 10px;
+.parrafo_quienesSomos p {
+  margin-top: 2rem;
 }
 
-.jardineria .jumbotron h2 {
-  font-family: 'Josefin Sans', sans-serif;
+.parrafo_quienesSomos img {
+  width: 60rem;
+  border-radius: 20px;
+  -webkit-transition: 2s linear;
+  transition: 2s linear;
+}
+
+.parrafo_quienesSomos img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.quienesSomos-img {
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.quienesSomos-img img {
+  margin-top: -4rem;
+  border-radius: 20px;
+  -webkit-transition: 2s linear;
+  transition: 2s linear;
+}
+
+.quienesSomos-img img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*Fin Quienes somos*/
+/*Servicios*/
+.servicios_especialistas .jardineria {
+  border: groove;
+  margin-top: 3rem;
+  background-image: url(../../multimedia/imagenes/jardineria/fondo.jpg);
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.servicios_especialistas .jardineria h2, .servicios_especialistas .jardineria p {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
   font-size: 3rem;
   text-align: center;
 }
 
-.jardineria .jumbotron p {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.jardineria .card-title {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-}
-
-.jardineria .card {
-  margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-/*Carousel, descripcion y contacto de paisajismo*/
-.paisajismo {
-  margin-top: 5rem;
-}
-
-.paisajismo h3 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
+.servicios_especialistas .jardineria p {
   font-size: 2rem;
+}
+
+.servicios_especialistas .jardineria .especialista_jardineria .jardineria_iframe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.servicios_especialistas .jardineria .especialista_jardineria iframe {
+  margin-top: 3rem;
+  width: 60rem;
+  height: 35rem;
+  border-radius: 20px;
+}
+
+.servicios_especialistas .jardineria .img_especialistaJardineria {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
-}
-
-.paisajismo .jumbotron {
-  margin: 0 auto;
-  background: linear-gradient(-43deg, #16ed7b, #7d73f5);
-  background: -webkit-linear-gradient(-43deg, #16ed7b, #7d73f5);
-  border-radius: 10px;
-}
-
-.paisajismo .jumbotron h2 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.servicios_especialistas .jardineria .img_especialistaJardineria img {
+  width: 50rem;
+  border-radius: 20px;
+}
+
+.servicios_especialistas .jardineria .img_especialistaJardineria button {
+  background-color: skyblue;
+  border-radius: 10px;
+  border: groove;
+}
+
+.servicios_especialistas .jardineria .img_especialistaJardineria button a {
+  color: green;
+  font-weight: 700;
+}
+
+.servicios_especialistas .paisajismo {
+  margin-top: 3rem;
+  background-image: url(../../multimedia/imagenes/paisajismo/fondo.jpg);
+  background-size: contain;
+  background-attachment: fixed;
+  border: groove;
+}
+
+.servicios_especialistas .paisajismo h2, .servicios_especialistas .paisajismo p {
+  color: white;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
   font-size: 3rem;
   text-align: center;
 }
 
-.paisajismo .jumbotron p {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.paisajismo .card-title {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-}
-
-.paisajismo .card {
-  margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-/*Carousel, descripcion y contacto de acuarismo*/
-.acuarismo {
-  margin-top: 5rem;
-}
-
-.acuarismo h3 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
+.servicios_especialistas .paisajismo p {
   font-size: 2rem;
+}
+
+.servicios_especialistas .paisajismo .img_especialistaPaisajismo {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
-}
-
-.acuarismo .jumbotron {
-  margin: 0 auto;
-  background: linear-gradient(-43deg, #16ed7b, #7d73f5);
-  background: -webkit-linear-gradient(-43deg, #16ed7b, #7d73f5);
-  border-radius: 10px;
-}
-
-.acuarismo .jumbotron h2 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.servicios_especialistas .paisajismo .img_especialistaPaisajismo img {
+  width: 30rem;
+  height: 35rem;
+  border-radius: 20px;
+}
+
+.servicios_especialistas .paisajismo .img_especialistaPaisajismo button {
+  background-color: skyblue;
+  border-radius: 10px;
+  border: groove;
+}
+
+.servicios_especialistas .paisajismo .img_especialistaPaisajismo button a {
+  color: green;
+  font-weight: 700;
+}
+
+.servicios_especialistas .paisajismo .especialista_paisajismo .paisajismo_iframe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.servicios_especialistas .paisajismo .especialista_paisajismo iframe {
+  margin-top: 3rem;
+  width: 60rem;
+  height: 35rem;
+  border-radius: 20px;
+}
+
+.servicios_especialistas .acuarismo {
+  margin-top: 3rem;
+  background-image: url(../../multimedia/imagenes/acuarismo/aquarium-284551.jpg);
+  background-size: contain;
+  background-attachment: fixed;
+  border: groove;
+}
+
+.servicios_especialistas .acuarismo h2, .servicios_especialistas .acuarismo p {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
   font-size: 3rem;
   text-align: center;
 }
 
-.acuarismo .jumbotron p {
-  font-family: 'Josefin Sans', sans-serif;
+.servicios_especialistas .acuarismo p {
+  font-size: 2rem;
+}
+
+.servicios_especialistas .acuarismo .img_especialistaAcuarismo {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
+  color: black;
   font-size: 1.5rem;
+}
+
+.servicios_especialistas .acuarismo .img_especialistaAcuarismo img {
+  width: 28rem;
+  height: 35rem;
+  border-radius: 20px;
+}
+
+.servicios_especialistas .acuarismo .img_especialistaAcuarismo button {
+  background-color: skyblue;
+  border-radius: 10px;
+  border: groove;
+}
+
+.servicios_especialistas .acuarismo .img_especialistaAcuarismo button a {
+  color: green;
+  font-weight: 700;
+}
+
+.servicios_especialistas .acuarismo .especialista_acuarismo .acuarismo_iframe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.servicios_especialistas .acuarismo .especialista_acuarismo iframe {
+  margin-top: 3rem;
+  width: 60rem;
+  height: 35rem;
+  border-radius: 20px;
+}
+
+.figcaption {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.parallax-servicios {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 15rem;
+  width: 100%;
+  background-image: url(../../multimedia/imagenes/paisajismo/cuidemos-min.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parallax-serviciosDos {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 15rem;
+  width: 100%;
+  background-image: url(../../multimedia/imagenes/paisajismo/conservemos.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*Fin Servicios*/
+/*Clientes*/
+.formLogin {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formLogin h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
   text-align: center;
 }
 
-.acuarismo .card-title {
-  font-family: 'Josefin Sans', sans-serif;
+.formLogin .lblLogin {
+  font-size: 1.5rem;
+}
+
+.formLogin .ctrlLogin {
+  font-weight: 700;
+  width: 40%;
+  margin: auto;
+  border-radius: 20px;
+  font-size: 1.5rem;
+}
+
+.formLogin .smlTxt {
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
-.acuarismo .card {
+.formLogin .btn-logIn {
+  border: groove;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fab22c), to(skyblue));
+  background-image: linear-gradient(#fab22c, skyblue);
+  border-radius: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
 }
 
-/*Preguntas y respuestas*/
+.formLogin .btn-logIn:hover {
+  background-color: greenyellow;
+}
+
+.formNewLogin {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formNewLogin h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+}
+
+.formNewLogin .lblNewUser {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formNewLogin .ctrlNewUser {
+  font-weight: 700;
+  font-size: 1.5rem;
+  width: 65%;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.formNewLogin .btn {
+  border: groove;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fab22c), to(skyblue));
+  background-image: linear-gradient(#fab22c, skyblue);
+  border-radius: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+.formNewLogin .btn:hover {
+  background-color: greenyellow;
+}
+
+/*Fin Clientes*/
+/*FAQ*/
 main {
   text-align: center;
   margin-bottom: 7rem;
 }
 
 main h1 {
-  margin-top: 15rem;
-  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 3rem;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
+  color: black;
   text-align: center;
 }
 
@@ -1018,8 +1815,9 @@ main .btn {
   margin-top: 1rem;
   border: 2px solid whitesmoke;
   border-radius: 50px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
+  color: black;
   font-size: 1.5rem;
 }
 
@@ -1050,8 +1848,9 @@ main .card {
   background: -webkit-gradient(linear, left top, right top, from(#0c79c7), color-stop(#0090dd), color-stop(#00a6e9), color-stop(#00bbe9), color-stop(#00cfdd), color-stop(#00e1c5), color-stop(#00f1a6), to(#33ff81));
   background: linear-gradient(90deg, #0c79c7, #0090dd, #00a6e9, #00bbe9, #00cfdd, #00e1c5, #00f1a6, #33ff81);
   margin-top: 1rem;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
+  color: black;
   font-size: 1.5rem;
   border: 0;
   border-bottom-left-radius: 30px;
@@ -1063,225 +1862,139 @@ main .card {
   margin-bottom: 5rem;
 }
 
-.mapa h2 {
-  text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-}
-
 .mapa ul {
-  list-style: none;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  list-style: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: black;
+  font-size: 1.5rem;
 }
 
 .mapa ul li {
-  margin: 10px;
+  margin-left: 10px;
+}
+
+.mapa ul li abbr {
+  text-decoration: none;
 }
 
 /*Media para lista de sucursales*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 500px) {
   .mapa ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 30%;
+    text-align: center;
   }
 }
 
-.formLogin {
-  margin-top: 1rem;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.formLogin h1 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-  margin-top: 13rem;
-}
-
-.formLogin .lblLogin {
-  font-size: 1.5rem;
-}
-
-.formLogin .ctrlLogin {
-  font-weight: 700;
-  width: 40%;
-  margin: auto;
-}
-
-.formLogin .smlTxt {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.formLogin .form-check-input {
-  margin-top: 0.7rem;
-}
-
-.formLogin .btn {
-  background: linear-gradient(-43deg, #16ed7b, #7d73f5);
-  background: -webkit-linear-gradient(-43deg, #16ed7b, #7d73f5);
-  border-radius: 10px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-}
-
-.formNewLogin {
-  margin-top: 10rem;
-  font-family: 'Josefin Sans', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-weight: 700;
-}
-
-.formNewLogin h2 {
-  font-weight: 700;
-}
-
-.formNewLogin .lblNewUser {
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.formNewLogin .ctrlNewUser {
-  font-weight: 700;
-  width: 65%;
-  margin: auto;
-}
-
-.formNewLogin .form-check-input {
-  margin-top: 0.7rem;
-  margin-left: -3rem;
-}
-
-.formNewLogin .btn {
-  background: linear-gradient(-43deg, #16ed7b, #7d73f5);
-  background: -webkit-linear-gradient(-43deg, #16ed7b, #7d73f5);
-  border-radius: 10px;
-  font-family: 'Josefin Slab' , serif;
-  font-size: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
+/*Fin FAQ*/
+/*Macetas*/
+.macetas {
+  margin-top: 5rem;
   margin-bottom: 5rem;
-  font-family: 'Josefin Sans', sans-serif;
+}
+
+.macetas .primera-fila img, .macetas .segunda-fila img {
+  border-radius: 20px;
+  border: groove;
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
+}
+
+.macetas .primera-fila img:hover, .macetas .segunda-fila img:hover {
+  border-radius: 10rem;
+}
+
+.macetas .primera-fila figcaption, .macetas .segunda-fila figcaption {
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
+  color: black;
+  font-size: 2rem;
+  text-align: center;
 }
 
-.catalogoProductos {
-  margin-top: 15rem;
-  margin-bottom: 10rem;
-  font-family: 'Josefin Sans', sans-serif;
+.macetas .primera-fila figcaption button, .macetas .segunda-fila figcaption button {
+  background-color: transparent;
+  border: none;
+}
+
+/*Fin Macetas*/
+/*Plantas*/
+.plantas {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.plantas .primera-filaPlantas img, .plantas .segunda-filaPlantas img {
+  border-radius: 400px;
+  border: groove;
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
+}
+
+.plantas .primera-filaPlantas img:hover, .plantas .segunda-filaPlantas img:hover {
+  border-radius: 0;
+}
+
+.plantas .primera-filaPlantas figcaption, .plantas .segunda-filaPlantas figcaption {
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
-}
-
-.catalogoProductos h1 {
-  font-size: 3rem;
+  color: black;
+  font-size: 2rem;
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
-.catalogoProductos .catProduct {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.plantas .primera-filaPlantas figcaption button, .plantas .segunda-filaPlantas figcaption button {
+  background-color: transparent;
+  border: none;
 }
 
-.catalogoProductos .catProduct .card {
-  margin: 10px;
+/*Fin Plantas*/
+/*Sustrato*/
+.sustrato {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
-.catalogoProductos {
-  margin-top: 15rem;
-  margin-bottom: 10rem;
-  font-family: 'Josefin Sans', sans-serif;
+.sustrato .primera-filaSustrato img {
+  border-bottom-left-radius: 10rem;
+  border-top-right-radius: 10rem;
+  width: 80%;
+  height: 70%;
+  border: groove;
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
+  margin-top: -2rem;
 }
 
-.catalogoProductos h1 {
-  font-weight: 600;
-  font-size: 3rem;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.sustrato .primera-filaSustrato img:hover {
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 10rem;
+  border-top-left-radius: 10rem;
 }
 
-.catalogoProductos .catProduct {
-  font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.catalogoProductos .catProduct .card {
-  margin: 10px;
-}
-
-.catalogoProductos h5 {
-  font-weight: 600;
-}
-
-.catalogoProductos {
-  margin-top: 15rem;
-  margin-bottom: 10rem;
-  font-family: 'Josefin Sans', sans-serif;
+.sustrato .primera-filaSustrato figcaption {
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
-}
-
-.catalogoProductos h1 {
-  font-size: 3rem;
+  color: black;
+  font-size: 2rem;
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
-.catalogoProductos .catProduct {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.sustrato .primera-filaSustrato figcaption button {
+  background-color: transparent;
+  border: none;
 }
 
-.catalogoProductos .catProduct .card {
-  margin: 10px;
-}
-
-#popupIframe, #chatIframe {
-  margin-bottom: -1rem;
-}
+/*Fin Sustrato*/
+/*Fin*/
 /*# sourceMappingURL=diseños.css.map */

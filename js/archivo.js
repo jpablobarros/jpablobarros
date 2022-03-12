@@ -81,3 +81,13 @@ btnCerrarNavVar.addEventListener('click', function(){
     ventanaNavVar.classList.remove('active');
     popupNavVar.classList.remove("active")
 });
+
+/*Boton ir arriba*/
+
+document.querySelector(".ir_arriba")
+.addEventListener("click", ()=>{
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+});
